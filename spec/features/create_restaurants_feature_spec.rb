@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe "creating restuarants" do
   
-  context 'creating a name and description' do
+  context 'given a name and description' do
   
     it 'should display the new restaurant on the list of restaurants' do
       visit '/restaurants/new'
@@ -13,7 +13,8 @@ describe "creating restuarants" do
       expect(current_path).to eq '/restaurants'
       expect(page).to have_content 'McDonalds'
     end
-
+    
   end
 
 end
+
