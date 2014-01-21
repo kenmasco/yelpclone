@@ -26,7 +26,7 @@ describe 'A single restaurant entry' do
 
   it "should display a single restaurant entry" do
     Restaurant.create(name: 'Nandos', description: 'Chicken')
-    visit 'restaurants'
+    visit '/restaurants'
     click_link 'Nandos'
 
     expect(page).to have_content 'Nandos'

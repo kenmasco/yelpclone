@@ -14,7 +14,7 @@ describe 'reviewing' do
 
     fill_in 'Name', with: 'Ken'
     fill_in 'Review', with: 'It was awful'
-    fill_in 'Rating', with: '2'
+    select 2, from: 'Rating'
     click_button 'Submit'
 
     expect(page).to have_content 'It was awful'
