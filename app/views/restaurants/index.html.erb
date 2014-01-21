@@ -9,7 +9,7 @@
     <%= link_to restaurant.name, restaurant %>
   </h1>
   <h3> 
-    Created <%= time_ago_in_words(restaurant.created_at) %>
+    Created <%= time_ago_in_words(restaurant.created_at) %> ago
   </h3>
   <p><%= truncate(restaurant.description, :length => 140) %></p>
   
